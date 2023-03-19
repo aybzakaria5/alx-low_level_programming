@@ -11,13 +11,13 @@ int main(void)
 	int c;
 
 	a = 0;
-	while (a < 7)
+	while (a <= 7)
 	{
 		b = a + 1;
-		while (b < 8)
+		while (b <= 8)
 		{
 			c = b + 1;
-			while (c < 9)
+			while (c <= 9)
 			{
 				putchar(a + 48);
 				putchar(b + 48);
