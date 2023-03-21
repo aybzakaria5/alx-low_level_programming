@@ -1,1 +1,1 @@
-this si a RAEDME
+this is a README
