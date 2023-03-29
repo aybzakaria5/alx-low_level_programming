@@ -2,7 +2,7 @@
 
 /**
  * _atoi - Converts a string to an integer.
- * @s: The pointer to convert
+ * @s: converted
  *
  * Return: returns an int
  */
@@ -20,7 +20,7 @@ int _atoi(char *s)
 			min *= -1;
 		}
 
-		while (s[a] >= '0' && s[a] <='9')
+		while (s[a] >= '0' && s[a] <= '9')
 		{
 			isi = 1;
 			ni = (ni * 10) + (s[a] - '0');
