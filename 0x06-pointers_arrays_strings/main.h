@@ -1,4 +1,6 @@
 char *cap_string(char *);
+int _putchar(char c);
+void print_number(int n);
 char *leet(char *);
 char *string_toupper(char *str);
 void reverse_array(int *a, int n);
