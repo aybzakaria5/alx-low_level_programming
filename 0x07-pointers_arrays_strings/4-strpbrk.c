@@ -1,5 +1,4 @@
 #include "main.h"
-#include <stddef.h>
 /**
  * _strpbrk - a function that searches for any of a set of bytes
  *@s: frist occurrence in the string
@@ -9,17 +8,18 @@
 
 char *_strpbrk(char *s, char *accept)
 {
-	int i;
+	int i, j;
 
-	while (*s)
+	while (s[i] != '\0')
 
 	{
-		for (i = 0; (*(accept + i)); i++)
+		for (j = 0; accept[j] != '\0'; i++)
 		{
-			if (*s == *(accept +i))
-				return (s);
+			if (s[i] == accept[j])
+				return (s + i -1);
+			j++;
 		}
-		s++;
+		i++;
 	}
-	return (NULL);
+	return ('\0');
 }
