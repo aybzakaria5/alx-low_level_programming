@@ -49,7 +49,7 @@ int main(int argc, char *argv[])
 {
 	int prod,x,y;
 
-	if ((argc == 3))
+	if (argc== 3)
 	{
 		x = _atoi(argv[1]);
 		y = _atoi(argv[2]);
