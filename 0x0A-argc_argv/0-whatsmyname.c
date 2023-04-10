@@ -1,3 +1,5 @@
+#include<stdio.h>
+
 /**
  *main- a function that prints the name of a program
  *@argc: the counter
