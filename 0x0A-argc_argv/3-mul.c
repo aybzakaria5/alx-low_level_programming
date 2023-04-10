@@ -49,17 +49,17 @@ int main(int argc, char *argv[])
 {
 	int prod,x,y;
 
-	if (argc== 3)
+	if (argc != 3)
+	{
+		printf("Error\n");
+		return (1);
+	}
+	else
 	{
 		x = _atoi(argv[1]);
 		y = _atoi(argv[2]);
 		prod = x * y;
 		printf("%d\n", prod);
 		return (0);
-	}
-	else
-	{
-		printf("Error");
-		return (1);
 	}
 }
