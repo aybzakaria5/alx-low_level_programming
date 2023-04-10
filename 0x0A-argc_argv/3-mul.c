@@ -47,7 +47,7 @@ int _atoi(char *s)
  */
 int main(int argc, char *argv[])
 {
-	int prod,x,y;
+	int prod, x, y;
 
 	if (argc != 3)
 	{
