@@ -1,18 +1,17 @@
 #include "main.h"
 #include<stdlib.h>
 /**
- * *malloc_checked - a function that allocates memory usuing malloc 
- *@b: intput
- *Retrun: returns a pointer to the array or null
+ * malloc_checked - function that creates an array of chars,
+ *  and initializes it with a specific char
+ * @b: first bytes of the memory
+ * Return: pointer to the resulting string dests
  */
 void *malloc_checked(unsigned int b)
 {
-	 char *mall;
-	 mall = malloc(b);
+	void *s;
 
-	if (mall == 0)
-	{
+	s = malloc(b);
+	if (s == NULL)
 		exit(98);
-	}
-	return(mall);
+	return (s);
 }
