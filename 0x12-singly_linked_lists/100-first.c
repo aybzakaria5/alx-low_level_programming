@@ -2,7 +2,7 @@
 
 void before_main(void) __attribute__((constructor));
 /**
- *befor_main - a function that prents a sentence before main
+ *before_main - a function that prents a sentence before main
  */
 void before_main(void)
 {
