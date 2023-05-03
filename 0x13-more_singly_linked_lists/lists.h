@@ -23,4 +23,6 @@ size_t listint_len(const listint_t *h);
 size_t print_listint(const listint_t *h);
 listint_t *get_nodeint_at_index(listint_t *head, unsigned int index);
 int pop_listint(listint_t **head);
+int sum_listint(listint_t *head);
+
 #endif
