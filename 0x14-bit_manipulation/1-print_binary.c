@@ -19,6 +19,8 @@ void print_binary(unsigned long int n)
 
 	if (Sbit > n)
 		Sbit >>= 1;
+	else
+		i--;
 
 	if (!n)
 		_putchar('0');
@@ -27,6 +29,5 @@ void print_binary(unsigned long int n)
 	{
 		_putchar((n & Sbit) ? '1' : '0');
 		Sbit >>= 1;
-		i--;
 	}
 }
