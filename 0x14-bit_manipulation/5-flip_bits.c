@@ -10,13 +10,15 @@
 unsigned int flip_bits(unsigned long int n, unsigned long int m)
 {
 	unsigned long int XOR;
-	int nflips;
+	int nflips = 0;
 
 	XOR = n ^ m;
 
 	while (XOR)
 	{
-		nflips += XOR & 1;
+		if (XOR & 1)
+			nflips++;
+
 		XOR >>=  1;
 	}
 	return (nflips);
