@@ -9,9 +9,13 @@
 void print_binary(unsigned long int n)
 {
 	unsigned long int Sbit = 1;
+	int i = 0;
 
 	while (Sbit <= n)
-	Sbit <<= 1;
+	{
+		Sbit <<= 1;
+		i++;
+	}
 
 	if (Sbit > n)
 		Sbit >>= 1;
