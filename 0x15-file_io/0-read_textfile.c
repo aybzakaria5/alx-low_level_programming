@@ -28,11 +28,11 @@ ssize_t read_textfile(const char *filename, size_t letters)
 
 	if (nreads == -1 || write(STDOUT_FILENO, buff, nreads) != nreads)
 	{
+		close(fd);
 		free(buff);
 		return (0);
 	}
-	if (close(fd) == -1)
-		return (0);
+	close(fd);
 	free(buff);
 	return (nreads);
 }
