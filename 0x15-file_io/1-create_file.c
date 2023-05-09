@@ -24,5 +24,5 @@ int create_file(const char *filename, char *text_content)
 	}
 	n_write = write(fd, text_content, i);
 	close(fd);
-	return ((n_write == -1) ? -1 : 1);
+	return (1);
 }
