@@ -1,6 +1,6 @@
 #include "main.h"
 #define BUFF_SIZE 1024
-
+#define PERM  (S_IRUSR | S_IWUSR | S_IRGRP | S_IWGRP | S_IROTH)
 void close_func(int fd);
 /**
  *close_func - a function that check err with no closing
@@ -35,7 +35,7 @@ int main(int argc, char **argv)
 			exit(97);
 	}
 	fd_from = open(argv[1], O_RDONLY);
-	fd_to = open(argv[2], O_WRONLY | O_CREAT | O_TRUNC, 0664);
+	fd_to = open(argv[2], O_WRONLY | O_CREAT | O_TRUNC , PERM);
 
 	if (fd_from == -1)
 	{
