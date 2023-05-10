@@ -45,7 +45,7 @@ int main(int argc, char **argv)
 
 	if (fd_to == -1)
 	{
-		dprintf(STDERR_FILENO, ERR_READ, argv[2]);
+		dprintf(STDERR_FILENO, ERR_WRITE, argv[2]);
 		exit(99);
 	}
 
