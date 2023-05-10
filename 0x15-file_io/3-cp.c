@@ -42,16 +42,14 @@ int main(int argc, char **argv)
 		dprintf(STDERR_FILENO, ERR_READ, argv[1]);
 			exit(98);
 	}
-	
 
 	if (fd_to == -1)
 	{
 		dprintf(STDERR_FILENO, ERR_READ, argv[2]);
 		exit(99);
 	}
-	n_reads = read(fd_from, buf, BUFF_SIZE);
 
-	while (n_reads > 0)
+	while ((n_reads = read(fd_from, buf, BUFF_SIZE))  > 0)
 	{
 		if (write(fd_to, buf, n_reads) != n_reads)
 		{
