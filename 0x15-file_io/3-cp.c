@@ -58,10 +58,12 @@ int main(int argc, char **argv)
 		}
 	}
 	if (n_reads == -1)
+	{
 		dprintf(STDERR_FILENO, ERR_READ, argv[1]);
 			exit(98);
+	}
+
 	close_func(fd_from);
 	close_func(fd_to);
-	free(buf);
 	return (0);
 }
