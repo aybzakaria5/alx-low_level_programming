@@ -27,7 +27,7 @@ void close_func(int fd)
 int main(int argc, char **argv)
 {
 	int fd_from, fd_to, n_reads;
-	char *buf[BUFF_SIZE];
+	char buf[BUFF_SIZE];
 
 	if (argc != 3)
 	{
@@ -35,7 +35,7 @@ int main(int argc, char **argv)
 			exit(97);
 	}
 	fd_from = open(argv[1], O_RDONLY);
-	fd_to = open(argv[2], O_WRONLY | O_CREAT | O_TRUNC , PERM);
+	fd_to = open(argv[2], O_WRONLY | O_CREAT | O_TRUNC, PERM);
 
 	if (fd_from == -1)
 	{
