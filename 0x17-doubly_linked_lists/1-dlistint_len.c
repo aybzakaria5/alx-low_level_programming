@@ -1,10 +1,10 @@
 #include "lists.h"
 
-/*
- *  dlistint_len - Check number of elemenys in a list.
- *   @h: Pointer to header of list
+/**
+ * dlistint_len - number of elements in a linked list
+ * @h: pointer to the header
  *
- *   Return: Number of elements in list.
+ * Return: the number of nodes
  */
 
 size_t dlistint_len(const dlistint_t *h)
