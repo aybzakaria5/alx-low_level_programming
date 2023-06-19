@@ -1,0 +1,1 @@
+A dynamic library is a type of library that is linked to an executable at runtime, providing reusable code and functions that can be shared among multiple programs, promoting code modularity and reducing executable size.
