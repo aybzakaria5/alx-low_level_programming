@@ -1,0 +1,1 @@
+this directory isabout the double linked lists data structures with this prjcts solving
