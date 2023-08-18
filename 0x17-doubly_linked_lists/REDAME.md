@@ -1,0 +1,1 @@
+wokring on some prjcts about doubly linked lists
